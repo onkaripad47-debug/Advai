@@ -1,277 +1,372 @@
+Replace your entire index.html with this final version:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Advai — AI Advertising Intelligence</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advai — AI Advertising Platform</title>
+<meta name="title" content="Advai — AI Advertising Platform">
+<meta name="description" content="Generate adaptive AI-powered advertisements without expensive shoots or production teams.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
 }
 body{
-    font-family:'Inter',sans-serif;
-    background:#f5f7fb;
-    color:#111827;
+font-family:'Inter',sans-serif;
+background:#f5f7fb;
+color:#111827;
 }
 .container{
-    width:90%;
-    max-width:1280px;
-    margin:auto;
+width:90%;
+max-width:1280px;
+margin:auto;
 }
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:28px 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:28px 0;
 }
 .logo{
-    font-size:30px;
-    font-weight:800;
+font-size:32px;
+font-weight:800;
 }
 .nav-links{
-    display:flex;
-    gap:28px;
-    color:#4b5563;
+display:flex;
+gap:28px;
+}
+.nav-links a{
+text-decoration:none;
+color:#4b5563;
+font-weight:500;
+transition:0.3s;
+}
+.nav-links a:hover{
+color:#2563eb;
 }
 .hero{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-    padding:70px 0 100px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+padding:80px 0 120px;
 }
 .hero h1{
-    font-size:72px;
-    line-height:1.05;
-    margin-bottom:24px;
+font-size:76px;
+line-height:1.02;
+margin-bottom:24px;
 }
 .gradient{
-    background:linear-gradient(90deg,#2563eb,#60a5fa);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+background:linear-gradient(90deg,#2563eb,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 .hero p{
-    font-size:20px;
-    line-height:1.7;
-    color:#4b5563;
-    margin-bottom:36px;
+font-size:20px;
+line-height:1.8;
+color:#4b5563;
+margin-bottom:38px;
 }
 .buttons{
-    display:flex;
-    gap:16px;
+display:flex;
+gap:16px;
 }
 .btn{
-    padding:16px 28px;
-    border-radius:18px;
-    font-weight:600;
-    text-decoration:none;
+padding:16px 28px;
+border-radius:18px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s ease;
+display:inline-block;
+}
+.btn:hover{
+transform:scale(1.04);
 }
 .primary{
-    background:#2563eb;
-    color:white;
+background:#2563eb;
+color:white;
 }
 .secondary{
-    background:white;
-    border:1px solid #d1d5db;
-    color:#111827;
+background:white;
+border:1px solid #d1d5db;
+color:#111827;
 }
 .dashboard{
-    background:white;
-    border-radius:34px;
-    padding:28px;
-    box-shadow:0 30px 80px rgba(0,0,0,0.08);
-}
-.card-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-    margin-bottom:18px;
+background:white;
+border-radius:34px;
+padding:30px;
+box-shadow:0 30px 80px rgba(0,0,0,0.08);
 }
 .card{
-    background:#f8fafc;
-    border-radius:24px;
-    padding:22px;
+background:#f8fafc;
+padding:24px;
+border-radius:24px;
+margin-bottom:18px;
 }
 .metric{
-    font-size:34px;
-    font-weight:700;
-    margin-top:10px;
+font-size:40px;
+font-weight:700;
+margin-top:10px;
 }
 .chart{
-    height:180px;
-    border-radius:20px;
-    background:linear-gradient(180deg,#dbeafe,#eff6ff);
-    margin-top:18px;
-    position:relative;
-    overflow:hidden;
+height:200px;
+border-radius:24px;
+background:linear-gradient(180deg,#dbeafe,#eff6ff);
+position:relative;
+overflow:hidden;
+margin-top:20px;
 }
 .wave{
-    position:absolute;
-    width:120%;
-    height:100px;
-    border-radius:50%;
-    border:4px solid #2563eb;
-    bottom:-40px;
-    left:-10%;
+position:absolute;
+width:120%;
+height:100px;
+border-radius:50%;
+border:4px solid #2563eb;
+bottom:-40px;
+left:-10%;
 }
 .section{
-    padding:100px 0;
+padding:110px 0;
 }
 .section h2{
-    font-size:52px;
-    margin-bottom:18px;
+font-size:54px;
+margin-bottom:18px;
 }
 .section p{
-    color:#4b5563;
-    font-size:18px;
-    max-width:760px;
-    line-height:1.8;
+font-size:19px;
+line-height:1.8;
+max-width:820px;
+color:#4b5563;
 }
-.features{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
-    margin-top:48px;
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-top:50px;
 }
 .feature{
-    background:white;
-    padding:32px;
-    border-radius:28px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.04);
+background:white;
+padding:34px;
+border-radius:28px;
+box-shadow:0 10px 30px rgba(0,0,0,0.04);
+transition:0.3s ease;
+cursor:pointer;
+}
+.feature:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 .feature h3{
-    margin:18px 0 14px;
+margin:18px 0 14px;
+font-size:24px;
+}
+.feature p{
+font-size:16px;
 }
 .cta{
-    background:#111827;
-    color:white;
-    border-radius:40px;
-    padding:80px;
-    text-align:center;
+background:#111827;
+color:white;
+padding:90px;
+border-radius:40px;
+text-align:center;
 }
 .cta h2{
-    font-size:58px;
-    margin-bottom:20px;
+font-size:60px;
+margin-bottom:18px;
+}
+.cta p{
+max-width:720px;
+margin:auto;
+opacity:0.8;
+margin-bottom:34px;
 }
 footer{
-    padding:40px 0;
-    color:#6b7280;
-    text-align:center;
+padding:40px 0;
+text-align:center;
+color:#6b7280;
 }
 @media(max-width:900px){
-    .hero{
-        grid-template-columns:1fr;
-    }
-    .hero h1{
-        font-size:52px;
-    }
-    .features{
-        grid-template-columns:1fr;
-    }
-    .cta{
-        padding:50px 30px;
-    }
-    .cta h2{
-        font-size:40px;
-    }
+.hero{
+grid-template-columns:1fr;
+}
+.hero h1{
+font-size:52px;
+}
+.grid{
+grid-template-columns:1fr;
+}
+.nav-links{
+display:none;
+}
+.cta{
+padding:50px 24px;
+}
+.cta h2{
+font-size:42px;
+}
 }
 </style>
 </head>
 <body>
-
 <div class="container">
-    <nav>
-        <div class="logo">Advai</div>
-        <div class="nav-links">
-            <span>Platform</span>
-            <span>Analytics</span>
-            <span>AI Creative</span>
-            <span>Enterprise</span>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div>
-            <h1>AI advertising for <span class="gradient">modern brands.</span></h1>
-            <p>
-                Launch, optimize, and scale ad campaigns with AI-powered analytics,
-                creatives, and targeting. Built for startups, SMEs, ecommerce brands,
-                and enterprise giants.
-            </p>
-
-            <div class="buttons">
-                <a href="#" class="btn primary">Start platform</a>
-                <a href="#" class="btn secondary">Book demo</a>
-            </div>
-        </div>
-
-        <div class="dashboard">
-            <div class="card-grid">
-                <div class="card">
-                    <div>Campaign Revenue</div>
-                    <div class="metric">$2.4M</div>
-                </div>
-
-                <div class="card">
-                    <div>ROAS</div>
-                    <div class="metric">4.8x</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>Ad Performance Intelligence</div>
-                <div class="chart">
-                    <div class="wave"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>One platform for every advertiser.</h2>
-        <p>
-            Whether you're a local business, D2C startup, ecommerce seller,
-            enterprise brand, or mobile app — Advai helps you discover customers,
-            generate AI creatives, and scale performance campaigns.
-        </p>
-
-        <div class="features">
-            <div class="feature">
-                <h3>AI Campaign Analytics</h3>
-                <p>Track ROAS, conversion funnels, audience quality, and channel performance in real time.</p>
-            </div>
-
-            <div class="feature">
-                <h3>AI Creative Studio</h3>
-                <p>Create image ads, video ads, headlines, and campaign concepts instantly using AI.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Enterprise Scale</h3>
-                <p>Built for brands like ITC, Dabur, Zomato, and high-growth startups across India.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="cta">
-            <h2>Reach your next million customers.</h2>
-            <p style="font-size:20px;opacity:0.8;margin-bottom:30px;">
-                The future of AI-driven advertising starts with Advai.
-            </p>
-
-            <a href="#" class="btn primary">Launch Advai</a>
-        </div>
-    </section>
-
-    <footer>
-        © 2026 Advai — AI Advertising Intelligence Platform
-    </footer>
+<nav>
+<div class="logo">Advai</div>
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#analytics">Analytics</a>
+<a href="#solutions">Solutions</a>
+<a href="#contact">Contact</a>
 </div>
-
+</nav>
+<section class="hero">
+<div>
+<h1>
+AI advertising for the <span class="gradient">modern market.</span>
+</h1>
+<p>
+Create high-performing ads without expensive shoots,
+production teams, or influencers.
+Advai generates adaptive advertising creatives tailored
+to every audience, geography, and platform.
+</p>
+<div class="buttons">
+<a href="#" class="btn primary">Start Creating</a>
+<a href="#" class="btn secondary">Book Demo</a>
+</div>
+</div>
+<div class="dashboard">
+<div class="card">
+<div>Campaign Revenue</div>
+<div class="metric">$4.2M</div>
+</div>
+<div class="card">
+<div>AI Generated Creatives</div>
+<div class="metric">18K+</div>
+</div>
+<div class="card">
+<div>Adaptive Ad Intelligence</div>
+<div class="chart">
+<div class="wave"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="features">
+<h2>The world is your marketplace.</h2>
+<p>
+Advai helps businesses launch AI-generated advertisements
+that adapt to customer behavior, market trends, language,
+and audience segments.
+</p>
+<div class="grid">
+<div class="feature">
+<h3>No Production Limits</h3>
+<p>
+Generate premium advertising creatives without studios,
+models, or traditional production workflows.
+</p>
+</div>
+<div class="feature">
+<h3>Adaptive by Audience</h3>
+<p>
+AI automatically adjusts creatives for different customer
+segments, regions, and campaign objectives.
+</p>
+</div>
+<div class="feature">
+<h3>Built for Every Brand</h3>
+<p>
+From local businesses to global consumer brands,
+Advai scales with your advertising needs.
+</p>
+</div>
+</div>
+</section>
+<section class="section" id="analytics">
+<h2>Advertising Intelligence</h2>
+<div class="grid">
+<div class="feature">
+<h3>4.8x ROAS</h3>
+<p>
+Average return on ad spend generated using AI optimization.
+</p>
+</div>
+<div class="feature">
+<h3>18K+ Creatives</h3>
+<p>
+AI-generated campaigns launched across industries.
+</p>
+</div>
+<div class="feature">
+<h3>42% Lower Cost</h3>
+<p>
+Reduced production and campaign launch expenses.
+</p>
+</div>
+</div>
+</section>
+<section class="section" id="solutions">
+<h2>Why brands choose Advai.</h2>
+<div class="grid">
+<div class="feature">
+<h3>AI Ad Generation</h3>
+<p>
+Create image ads, campaign concepts, social creatives,
+and product advertisements instantly using AI.
+</p>
+</div>
+<div class="feature">
+<h3>Lower Advertising Cost</h3>
+<p>
+Reduce production and campaign creation costs while
+launching creatives significantly faster.
+</p>
+</div>
+<div class="feature">
+<h3>Performance Analytics</h3>
+<p>
+Track ROAS, conversions, customer engagement,
+and campaign effectiveness in real time.
+</p>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="cta">
+<h2>Create. Adapt. Scale.</h2>
+<p>
+Advai is building the future of AI-powered advertising.
+Launch adaptive campaigns for every audience without
+traditional production complexity.
+</p>
+<a href="mailto:hello@advaiads.com" class="btn primary">
+Contact Advai
+</a>
+</div>
+</section>
+<footer>
+© 2026 Advai — AI Advertising Intelligence Platform
+</footer>
+</div>
+<script>
+const cards = document.querySelectorAll('.feature');
+cards.forEach(card => {
+card.addEventListener('mouseenter', () => {
+card.style.transform = 'translateY(-10px)';
+});
+card.addEventListener('mouseleave', () => {
+card.style.transform = 'translateY(0px)';
+});
+});
+</script>
 </body>
 </html>

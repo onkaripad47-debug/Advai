@@ -1,11 +1,15 @@
-# Advai Website
+# Advai
 
-Clean Apple-style landing page for Advai AI Advertising Platform.
+AI-powered advertising platform.
+
+## Features
+- AI-generated ads
+- Adaptive audience targeting
+- Advertising analytics
+- Enterprise-ready positioning
 
 ## Deploy
-- Upload to GitHub
-- Connect repository to Vercel or Netlify
-- Deploy instantly
-
-## Files
-- index.html
+Deploy on:
+- Vercel
+- Netlify
+- Cloudflare Pages
